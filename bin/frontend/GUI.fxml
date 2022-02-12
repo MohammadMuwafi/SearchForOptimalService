@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1005.0" prefWidth="1030.0" style="-fx-background-color: #6591D3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.GUIController">
+   <children>
+      <ComboBox fx:id="choice" layoutX="327.0" layoutY="24.0" onAction="#loadCities" prefHeight="31.0" prefWidth="308.0" promptText="Choose The Search Algorithms " AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="400.0" />
+      <AnchorPane layoutX="-4.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <ComboBox fx:id="startCity" layoutX="20.0" layoutY="23.0" prefHeight="31.0" prefWidth="270.0" promptText="Start City" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+            <ComboBox fx:id="goalCity" layoutX="580.0" layoutY="23.0" prefHeight="31.0" prefWidth="270.0" promptText="Goal City" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+            <Button fx:id="run" layoutX="315.0" layoutY="9.0" mnemonicParsing="false" onAction="#traverse" prefHeight="53.0" prefWidth="102.5" style="-fx-background-color: #5EAB5E; -fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: white;" text="Run" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="315.0" AnchorPane.topAnchor="10.0" />
+            <TextArea fx:id="showOn" layoutY="82.0" prefHeight="859.0" prefWidth="666.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="761.0" AnchorPane.topAnchor="82.0" />
+            <ImageView fx:id="image" fitHeight="716.0" fitWidth="612.0" layoutX="740.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.2" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="75.20654296875" AnchorPane.topAnchor="153.0">
+               <image>
+                  <Image url="@images/map.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="exitButton" layoutX="637.0" layoutY="24.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: red; -fx-font-size: 14; -fx-text-fill: white; -fx-font-weight: bold;" text="Exit" AnchorPane.rightAnchor="315.0" />
+   </children>
+</AnchorPane>
